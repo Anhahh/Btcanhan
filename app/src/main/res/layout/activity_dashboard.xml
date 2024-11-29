@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Alex!\nYou’ve got 5 tasks today"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search something..."
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:layout_marginBottom="16dp" />
+
+
+    <TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabItem
+            android:text="Recently" />
+        <com.google.android.material.tabs.TabItem
+            android:text="Today" />
+        <com.google.android.material.tabs.TabItem
+            android:text="Upcoming" />
+    </TabLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/task1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task 1 - Progress 40%" />
+
+        <TextView
+            android:id="@+id/task2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task 2 - Progress 22%" />
+    </LinearLayout>
+</LinearLayout>
